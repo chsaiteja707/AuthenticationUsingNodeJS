@@ -1,0 +1,9 @@
+<h1>Hi you are logged in</h1>
+<h1>Hello <%=User.name %></h1>
+<h1>Your Email <%=User.email %></h1>
+<form action="/logout" method="post">
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+    <button type="submit">logout</button>
+</form>
+<a href="/special">click for special page</a>
+
